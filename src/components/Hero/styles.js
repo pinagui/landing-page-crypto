@@ -29,8 +29,13 @@ export const Content = styled.div`
   padding-top: 23rem;
   margin: 0 auto;
 
+  @media (min-width: 600px) and (max-width: 1024px) {
+    padding-top: 38rem;
+  }
+
   @media (min-width: 1025px) {
     width: 1280px;
+    padding-top: 7rem;
   }
   `;
 
@@ -41,7 +46,16 @@ export const Wrapper = styled.div`
   justify-content: center;
   justify-items: center;
   margin: 0 auto;
-  
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    width: 80%;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1025px) {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
 `;
 
   export const Logo = styled.div`
@@ -50,6 +64,17 @@ export const Wrapper = styled.div`
   height: 7rem;
   background-image: url(${logo});
   background-size: 7rem;
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+    width: 12rem;
+  height: 12rem;
+  background-size: 12rem;
+  }
+    @media (min-width: 1025px) {
+    width: 18rem;
+  height: 18rem;
+  background-size: 18rem;
+  }
   `;
 
   export const Text = styled.div`
@@ -65,19 +90,36 @@ export const Wrapper = styled.div`
     color: #FFFFFF;
 
     @media (min-width: 600px) and (max-width: 1024px) {
+      font-size: 24px;
+    }
 
+    @media (min-width: 1025px) {
+      font-size: 26px;
     }
   `
 
   export const Title = styled.h1`
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 28px;
     line-height: 30px;
     letter-spacing: 2px;
     width: 180px;
     color: #FFFFFF;
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      font-size: 44px;
+      padding-top: 0.5rem;
+      letter-spacing: 3px;
+      line-height: 40px;
+    }
+
+    @media (min-width: 1025px) {
+      font-size: 64px;
+      padding-top: 0.8rem;
+      line-height: 65px;
+    }
   `;
 
 export const WrapperText = styled.div`
@@ -88,6 +130,17 @@ export const DivStyled = styled.div`
   width: 100%;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1025px) {
+    width: 70%;
+    margin: 0;
+    text-align: left;
+    padding-left: 7rem;
+  }
 `;
 
 export const CTA = styled.h1`
@@ -101,6 +154,16 @@ export const CTA = styled.h1`
   b {
     color: #23D2CE
   }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 66px;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
 `
 
 export const Paragraph = styled.p`
@@ -111,11 +174,33 @@ export const Paragraph = styled.p`
   font-size: 18px;
   line-height: 112.5%;
   color: #FFFFFF;
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 70%;
+    padding: 1.2rem 0;
+    font-size: 26px;
+
+  }
 `
 
 export const DivButton = styled.div`
   margin: 0 auto;
   width: 100%;
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    max-width: 650px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 70%;
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+  }
 `
 
 export const Input = styled.input`
@@ -140,6 +225,11 @@ export const Input = styled.input`
   font-size: 1rem;
   color: #8B8B8B;
 }
+
+  @media (min-width: 1025px) {
+    width: 50%;
+    margin: 0 0.5rem 0 5.3rem ;
+  }
 `;
 
 export const Button = styled.button`
@@ -164,10 +254,19 @@ export const Button = styled.button`
     background: rgba(35,177,174,1);
   }
 
+  @media (min-width: 1025px) {
+    width: 25%;
+    margin:0;
+  }
+
 `
 
 export const Spacer = styled.div`
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
+  
+  @media (min-width: 600px) and (max-width: 1024px) {
+    padding-top: 0.7rem;
+  }
 `
 
 export const DivDates = styled.div`
@@ -177,11 +276,19 @@ export const DivDates = styled.div`
   padding-top: 0.5rem;
   justify-content: center;
   
-
+  @media (min-width: 1025px) {
+    margin: 0;
+    padding-left: 6.9rem;
+    justify-content: flex-start;
+  }
 `
 
 export const Calendar = styled.img`
 width: 1.4rem;
+
+  @media (min-width: 1025px) {
+    width: 2rem;
+  }
 `
 
 export const Dates = styled.p`
@@ -191,4 +298,11 @@ font-weight: 500;
 font-size: 20px;
 color: #FFFFFF;
 padding: 0 0.5rem;
+
+@media (min-width: 1025px) {
+    font-size: 25px;
+    padding: 0 0.8rem;
+    padding-top: 0.2rem;
+
+  }
 `
