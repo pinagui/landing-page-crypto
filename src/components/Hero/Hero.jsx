@@ -39,7 +39,7 @@ const Hero = () => (
       </S.DivButton>
 
       <S.DivDates>
-        <S.Calendar src={calendar} />
+        <S.Calendar src={calendar} alt="calendar"/>
         <S.Dates>
           21, 22 e 23 de março às 19h
         </S.Dates>
